@@ -1,0 +1,53 @@
+<style type="text/css" media="screen">
+	.twtr-widget
+	{
+		width:850px;
+		background-color:#000;
+	}
+	.twtr-bd a
+	{
+		color: white;
+	}
+	.twtr-tweet 
+	{
+		font-size:22px;;
+		background-color:#ff0000;
+		padding:5px;
+		margin:5px;
+		font-family:Tahoma, Geneva, Verdana;
+	}
+</style>
+<script type="text/javascript" charset="utf-8">
+	
+</script>
+<script src="./javascript/twitter-widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 6000,
+  width: 450,
+  height: 100,
+  theme: {
+    shell: {
+      background: '#ec4b00',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#3d393d',
+      links: '#ec4b00'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: false,
+    timestamp: false,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('arkavis').start();
+</script>
