@@ -1,0 +1,6 @@
+Want a twitterstream in your website, but don't want all the clutter from the official Twitter Embed?
+I took the official widget and removed most of the styling as well as the logos and link to twitter.
+Now it's just your tweets and you can style them anyway you want.
+
+It's all hacked together a bit as I just removed stuff from the original script without caring to refactor or clean it. 
+It works for me and should work for you too, but feel free to fork and make a cleaner and possibly configurable version - I just don't have the time right now. Enjoy.

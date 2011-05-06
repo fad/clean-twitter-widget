@@ -1981,7 +1981,7 @@ if (!Array.forEach) {
               that._createTweet({
                 id: needle.id,
                 user: needle.from_user,
-                tweet: tweetToHtml(needle.text),
+                tweet: ify.clean(needle.text),
                 avatar: needle.profile_image_url,
                 created_at: needle.created_at,
                 needle: needle
@@ -2259,7 +2259,7 @@ if (!Array.forEach) {
 
 })(); // #end application closure
 
-
+// custom method to display my tweets as links (not used in this version)
 function tweetToHtml(tweet)
 {
   var html = tweet;
